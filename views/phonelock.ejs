@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Où est Chen ? - RAVENS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <style>
+        .phone {
+            background-image: url("/img/phoneback.png");
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="columns is-multiline">
+            <div class="column is-8 is-offset-2 register has-text-left">
+                <a href="/dashboard" class="button is-primary">
+                    <- Malette 💼 </a>
+                    <% if(typeof error !='undefined' ) {%>
+                        <div class="notification is-danger p-3 has-text-centered">
+                            <%= error %>
+                        </div>
+                        <% } %>
+                        <div class="container columns">
+                            <div class="column"></div>
+                            <div class="column phone">
+                                <br><br><br>
+                                <div class="columns is-8 mt-6 pt-6 ml-6 mr-6 pr-1 is-multiline">
+                                    <div class="column is-full">
+                                        <h1 class="title is-4 has-text-white ">Téléphone Bloqué</h1>
+                                    </div>
+                                    <div class="column is-full mb-6">
+                                        <input class="input" type="text" placeholder="Mot de passe">
+                                        <button class="button is-primary" type="submit">Valider</button>
+                                    </div>
+                                    <div class="column is-full mt-6">
+                                        <a href="/forgetpassword">Mot de Passe oublié</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="column"></div>
+                        </div>
+            </div>
+            <div class="column is-8 is-offset-2">
+                <br>
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <a href="http://www.instagram.com/bde.epitech"><span class="icon">
+                                    <i class="fab fa-instagram"></i>
+                                </span> </a>&emsp;
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <small class="level-item" style="color: var(--textLight)">
+                            &copy; Website created by &#160;<a href="http://github.com/SitpiRajendran">Sitpi
+                                RAJENDRAN</a>&#160;with and for BDE Epitech Paris - RAVENS
+                        </small>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+    :root {
+        --brandColor: hsl(166, 67%, 51%);
+        --background: rgb(247, 247, 247);
+        --textDark: hsla(0, 0%, 0%, 0.66);
+        --textLight: hsla(0, 0%, 0%, 0.33);
+    }
+
+    body {
+        background: var(--background);
+        height: 100vh;
+        color: var(--textDark);
+    }
+
+    .field:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .register {
+        margin-top: 3rem;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .left,
+    .right {
+        padding: 4.5rem;
+    }
+
+    .left {
+        border-right: 5px solid var(--background);
+    }
+
+    .left .title {
+        font-weight: 800;
+        letter-spacing: -2px;
+    }
+
+    .left .colored {
+        color: var(--brandColor);
+        font-weight: 500;
+        margin-top: 1rem !important;
+        letter-spacing: -1px;
+    }
+
+    .left p {
+        color: var(--textLight);
+        font-size: 1.15rem;
+    }
+
+    .right .title {
+        font-weight: 800;
+        letter-spacing: -1px;
+    }
+
+    .right .description {
+        margin-top: 1rem;
+        margin-bottom: 1rem !important;
+        color: var(--textLight);
+        font-size: 1.15rem;
+    }
+
+    .right small {
+        color: var(--textLight);
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    input:focus {
+        border-color: var(--brandColor) !important;
+        box-shadow: 0 0 0 1px var(--brandColor) !important;
+    }
+
+    .fab,
+    .fas {
+        color: var(--textLight);
+        margin-right: 1rem;
+    }
+</style>
+
+</html>

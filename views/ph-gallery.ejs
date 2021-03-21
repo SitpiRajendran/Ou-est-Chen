@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Où est Chen ? - RAVENS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <style>
+        .phone {
+            background-image: url("/img/src_views_assets_img_phonerotate.png");
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            height: 600px;
+        }
+
+        .insidephone {
+            width: 80%;
+            height: 75%;
+            padding-top: 15%;
+            padding-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="columns is-multiline">
+            <div class="column is-10 is-offset-1 register has-text-left">
+                <a href="/phone" class="button is-primary">
+                    <- Phone 📱 </a>
+                        <div class="container">
+                            <div class="phone">
+                                <div class="insidephone">
+                                    <div class="columns is-multiline">
+                                        <div class="column is-one-third">
+                                            <img src="/img/OneDrive_1_31-01-2021/photo1.jpg"
+                                                onclick="window.open(this.src)" alt="">
+                                        </div>
+                                        <div class="column is-one-third">
+                                            <img src="/img/OneDrive_1_31-01-2021/photo2.jpg"
+                                                onclick="window.open(this.src)" alt="">
+                                        </div>
+                                        <div class="column is-one-third">
+                                            <img src="/img/OneDrive_1_31-01-2021/photo3.jpg"
+                                            onclick="window.open(this.src)" alt="">
+                                        </div>
+                                        <div class="column is-one-third">
+                                            <img src="/img/photo5.png"
+                                                onclick="window.open(this.src)" alt="">
+                                        </div>
+                                        <div class="column is-one-third">
+                                            <img src="/img/OneDrive_1_31-01-2021/photo4.jpg"
+                                                onclick="window.open(this.src)" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <div class="column is-8 is-offset-2">
+            <br>
+            <nav class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <a href="http://www.instagram.com/bde.epitech"><span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span> </a>&emsp;
+                    </div>
+                </div>
+                <div class="level-right">
+                    <small class="level-item" style="color: var(--textLight)">
+                        &copy; Website created by &#160;<a href="http://github.com/SitpiRajendran">Sitpi
+                            RAJENDRAN</a>&#160;with and for BDE Epitech Paris - RAVENS
+                    </small>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </section>
+</body>
+<script src="/js/material-photo-gallery-master/src/js/material-photo-gallery.js"></script>
+<script>
+    var elem = document.querySelector('.m-p-g');
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var gallery = new MaterialPhotoGallery(elem);
+    });
+</script>
+<style>
+    :root {
+        --brandColor: hsl(166, 67%, 51%);
+        --background: rgb(247, 247, 247);
+        --textDark: hsla(0, 0%, 0%, 0.66);
+        --textLight: hsla(0, 0%, 0%, 0.33);
+    }
+
+    body {
+        background: var(--background);
+        height: 100vh;
+        color: var(--textDark);
+    }
+
+    .field:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .register {
+        margin-top: 3rem;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .left,
+    .right {
+        padding: 4.5rem;
+    }
+
+    .left {
+        border-right: 5px solid var(--background);
+    }
+
+    .left .title {
+        font-weight: 800;
+        letter-spacing: -2px;
+    }
+
+    .left .colored {
+        color: var(--brandColor);
+        font-weight: 500;
+        margin-top: 1rem !important;
+        letter-spacing: -1px;
+    }
+
+    .left p {
+        color: var(--textLight);
+        font-size: 1.15rem;
+    }
+
+    .right .title {
+        font-weight: 800;
+        letter-spacing: -1px;
+    }
+
+    .right .description {
+        margin-top: 1rem;
+        margin-bottom: 1rem !important;
+        color: var(--textLight);
+        font-size: 1.15rem;
+    }
+
+    .right small {
+        color: var(--textLight);
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    input:focus {
+        border-color: var(--brandColor) !important;
+        box-shadow: 0 0 0 1px var(--brandColor) !important;
+    }
+
+    .fab,
+    .fas {
+        color: var(--textLight);
+        margin-right: 1rem;
+    }
+</style>
+
+</html>
